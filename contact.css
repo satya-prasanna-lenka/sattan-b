@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+#stickyy {
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(63, 10, 10);
+    position: relative;
+
+}
+#stickyy .logo {
+    position: absolute;
+    color: cornsilk;
+    text-decoration: none;
+    padding: 10px;
+    padding-top: 15px;
+    font-weight: 600;
+    font-family: calibri;
+}
+
+nav {
+    position: absolute;
+    height: 60px;
+    width: 60vw;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    }
+nav ul {
+        text-decoration: none;
+        position: absolute;
+        width: 45vw;
+        justify-content: space-around;
+
+        display: flex;
+
+    }
+
+    nav ul li {
+        list-style: none;
+
+        font-size: 24px;
+
+    }
+
+    nav ul li a:hover {
+        /* background-color: yellow; */
+        color: rgb(253, 237, 165);
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: cornsilk;
+        padding: 5px;
+    }
+
+    .logo-bar {
+        height: 30px;
+        width: 30px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        border-radius: 4px;
+        right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    #contacttt{
+        color: rgb(255, 209, 123);
+    }
+
+
+    @media only screen and (max-width:600px) {
+        .logo-bar {
+            display: flex;
+        }
+
+        nav ul {
+            flex-direction: column;
+            background-color: rgb(17, 15, 15);
+            top: 43px;
+            align-items: center;
+            height: 0vh;
+            overflow: hidden;
+            width: 100vw;
+            right: 0;
+            transition: all 0.6s ease;
+        }
+
+        .activee {
+            height: 38vh;
+            transition: all 0.6s ease;
+            z-index: 888;
+        }
+    }
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.top{
+    height: 100vh;
+    /* background-color: blueviolet; */
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    clip-path: polygon(50% 0%, 100% 0, 100% 24%, 71% 45%, 27% 61%, 0 78%, 0 0);
+}
+.contact{
+    /* height: 20vh;
+    width: 40%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+    line-height: 40px;
+}
+.gt-box{
+    /* position: absolute; */
+    position: absolute;
+    height: 70vh;
+    width: 100vw;
+    bottom: 15px;
+    /* background-color: yellow; */
+    z-index: 44;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.box{
+    /* position: absolute; */
+    height: 70vh;
+    width: 70vh;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2) , rgba(255, 255, 255, 0.6) );
+    bottom: 5px;
+    /* left: 25%; */
+    /* right: 40%; */
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2),
+    0 0 50px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.2rem);
+    /* filter: blur(0.2rem); */
+
+}
+.directly{
+    height: 50vh;
+    width: 50vh;
+    /* background-color: rgba(255, 0, 0, 0.219); */
+    /* position: absolute; */
+    bottom: 0;
+    padding-left: 5px;
+    /* right: 5vw; */
+}
+.directly address{
+    line-height: 30px;
+}
+.directly address a{
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width:600px){
+
+    
+    section{
+        height: 130vh;
+    }
+
+    .top{
+        height: 130vh;
+    }
+    .gt-box{
+        /* background-color: yellow; */
+        flex-direction: column;
+        align-items: center;
+        /* background-color: yellow; */
+        height: 100vh;
+    }
+    .box{
+        width: 100vw;
+        height: 100vh;
+    }
+    .contact{
+        /* background-color: yellowgreen; */
+        height: 20vh;
+    }
+    .directly{
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 2px;
+    }
+}
